@@ -2,18 +2,29 @@
 import { openai } from '@ai-sdk/openai';
 import { streamText, generateText, type UIMessage, type Message } from 'ai';
 
-// Allow streaming responses up to 30 seconds
-export const maxDuration = 30;
-
 export async function POST(req: Request) {
-  const { messages }: { messages: Message[] } = await req.json() as { messages: Message[] }
+  try {
+    const { messages }: { messages: Message[] } = await req.json() as { messages: Message[] }
+    const result = await generateText({
+      model: openai('gpt-3.5-turbo'),
+      system: 'You are a helpful assistant.',
+      messages,
+    });
+    return new Response(JSON.stringify({ text: (result).text }), {
+      headers: { 'Content-Type': 'application/json' }
+    })
 
+  } catch {
+    console.error('Error:', error);
+    return new Response(JSON.stringify({
+      error: error.message,
+      stack: error.stack
+    }), {
+      status: 500,
+      headers: { 'Content-Type': 'application/json' }
+    });
+  }
 
-  const result = streamText({
-    model: openai('gpt-3.5-turbo'),
-    system: 'You are a helpful assistant.',
-    messages,
-  });
 
   return result.toDataStreamResponse();
 }
