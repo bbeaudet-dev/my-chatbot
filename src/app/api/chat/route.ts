@@ -1,19 +1,21 @@
 
-import { openai } from '@ai-sdk/openai';
+import { createOpenAI, openai } from '@ai-sdk/openai';
 import { streamText, generateText, type UIMessage, type Message } from 'ai';
 
 export async function POST(req: Request) {
   try {
     const { messages }: { messages: Message[] } = await req.json() as { messages: Message[] }
-    const result = await generateText({
+
+    const openai = createOpenAI({
+      apiKey: process.env.OPENAI_API_KEY,
+    })
+    const result = streamText({
       model: openai('gpt-3.5-turbo'),
       system: 'You are a helpful assistant.',
       messages,
     });
-    return new Response(JSON.stringify({ text: (result).text }), {
-      headers: { 'Content-Type': 'application/json' }
-    })
 
+    return result.toDataStreamResponse()
   } catch (error) {
     console.error('Error:', error);
     const errorMessage = error instanceof Error ? error.message : 'Unknown error';
@@ -21,7 +23,8 @@ export async function POST(req: Request) {
 
     return new Response(JSON.stringify({
       error: errorMessage,
-      stack: errorStack
+      stack: errorStack,
+      apiKeyExists: !!process.env.OPEN_API_KEY
     }), {
       status: 500,
       headers: { 'Content-Type': 'application/json' }
