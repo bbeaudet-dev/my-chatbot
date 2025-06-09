@@ -1,28 +1,54 @@
-'use client'
-import { useChat } from 'ai/react'
+"use client"
 
-export function Chat() {
-    const { messages, input, handleInputChange, handleSubmit } = useChat()
+import { useChat } from '@ai-sdk/react'
+import type { UIMessage } from 'ai'
+import { useMemo } from 'react'
+
+
+function ChatroomHeader() {
+    return (
+        <div className="mb-6">
+            <h1>Chat Assistant</h1>
+            <p>Ask me anything!</p>
+        </div>
+    )
+}
+
+function ChatroomFeed({ messages }: { messages: UIMessage[] }) {
+    return (
+        <div className="p-4">
+            {messages.map(message => (
+                <div key={message.id} className={`p-4`}>
+                    <div>{message.content}</div>
+                </div>
+            ))}
+        </div>
+    )
+}
+
+// function ChatroomForm() {
+//     return(
+        
+//     )
+// }
+
+export default function Chatroom() {
+    const { messages, input, setInput, handleInputChange, handleSubmit } = useChat()
 
     return (
-        <div className="flex flex-col w-full max-w-md mx-auto">
-            <div className="flex-1 overflow-y-auto">
-                {messages.map(m => (
-                    <div key={m.id} className="mb-4">
-                        <strong>{m.role}: </strong>
-                        {m.content}
-                    </div>
-                ))}
-            </div>
-
-            <form onSubmit={handleSubmit} className="flex gap-2">
+        <div className="flex flex-col w-full mx-auto p-4">
+            <ChatroomHeader />
+            <ChatroomFeed messages={messages} />
+            <form onSubmit={handleSubmit} className="flex gap-3">
                 <input
                     value={input}
                     onChange={handleInputChange}
-                    placeholder="Say something..."
-                    className="flex-1 p-2 border rounded"
+                    placeholder="Start chatting..."
+                    className="p-3 border-2 rounded-lg"
                 />
-                <button type="submit">Send</button>
+                <button type="submit" className="p-5">
+                    Send
+                </button>
             </form>
         </div>
     )
