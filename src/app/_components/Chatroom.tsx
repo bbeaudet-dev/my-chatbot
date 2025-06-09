@@ -40,7 +40,7 @@ export default function Chatroom() {
             <div className="p-4 bg-gray-50 rounded-lg border">
                 {/* Messages */}
                 {messages.map(message => (
-                    <div key={message.id} className={`p-3 rounded ${messageBg(message)}`}>
+                    <div key={message.id} className="p-3 rounded">
                         {message.role === 'user' ? 'User: ' : 'AI: '}
                         {message.content}
                         <button className="px-2 text-red-600" onClick={() => handleDelete(message.id)}>x</button>
