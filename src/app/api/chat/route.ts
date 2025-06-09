@@ -14,7 +14,7 @@ export async function POST(req: Request) {
       headers: { 'Content-Type': 'application/json' }
     })
 
-  } catch {
+  } catch (error: any) {
     console.error('Error:', error);
     return new Response(JSON.stringify({
       error: error.message,
@@ -25,8 +25,7 @@ export async function POST(req: Request) {
     });
   }
 
-
-  return result.toDataStreamResponse();
+  // return result.toDataStreamResponse();
 }
 
 
