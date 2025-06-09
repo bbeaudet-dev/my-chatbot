@@ -1,15 +1,16 @@
+
 import { openai } from '@ai-sdk/openai';
-import { streamText, type UIMessage, type Message } from 'ai';
+import { streamText, generateText, type UIMessage, type Message } from 'ai';
 
 // Allow streaming responses up to 30 seconds
 export const maxDuration = 30;
 
 export async function POST(req: Request) {
-  console.log('API key exists:', !!process.env.OPEN_API_KEY)
   const { messages }: { messages: Message[] } = await req.json() as { messages: Message[] }
 
+
   const result = streamText({
-    model: openai('gpt-4-turbo'),
+    model: openai('gpt-3.5-turbo'),
     system: 'You are a helpful assistant.',
     messages,
   });
