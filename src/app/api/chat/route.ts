@@ -14,7 +14,7 @@ export async function POST(req: Request) {
       headers: { 'Content-Type': 'application/json' }
     })
 
-  } catch (error: any) {
+  } catch (error) {
     console.error('Error:', error);
     const errorMessage = error instanceof Error ? error.message : 'Unknown error';
     const errorStack = error instanceof Error ? error.stack : undefined;
