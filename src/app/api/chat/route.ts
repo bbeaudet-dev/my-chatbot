@@ -13,6 +13,7 @@ export async function POST(req: Request) {
     messages,
   });
 
+  console.log(result)
   return result.toDataStreamResponse();
 }
 

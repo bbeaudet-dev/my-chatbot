@@ -1,7 +1,6 @@
 'use client';
 
 import { useChat } from '@ai-sdk/react'
-import Spinner from "~/app/_components/Spinner";
 
 export default function Page() {
   const { messages, input, handleInputChange, handleSubmit, status, stop } = useChat({})
@@ -17,7 +16,7 @@ export default function Page() {
 
       {(status === 'submitted' || status === 'streaming') && (
         <div>
-          {status === 'submitted' && <Spinner />}
+          {status === 'submitted' && <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-blue-500"></div>}
           <button type="button" onClick={() => stop()}>
             Stop
           </button>
