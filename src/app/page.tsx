@@ -1,6 +1,6 @@
-import Chat from './_components/Chat'
 
+import Chatroom from './_components/Chatroom'
 
 export default function Page() {
-    return <Chat />
+    return <Chatroom />
 }
