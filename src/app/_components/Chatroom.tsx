@@ -1,6 +1,6 @@
 "use client"
 
-import { useChat } from '@ai-sdk/react'
+import { useChat, type Message } from '@ai-sdk/react'
 
 export default function Chatroom() {
     const { messages, setMessages, input, setInput, handleInputChange, handleSubmit, status, stop, error, reload } = useChat({
@@ -21,8 +21,14 @@ export default function Chatroom() {
         setMessages(messages.filter(message => message.id !== id))
     }
 
+    const messageBg = (message: Message) => {
+        message.role === 'user'
+            ? 'bg-blue-500 text-blue-200 ml-12'
+            : 'bg-white border mr-12'
+    }
+
     return (
-        <div className="flex flex-col w-full mx-auto p-4">
+        <div className="flex flex-col w-full max-w-2xl mx-auto p-4">
 
             {/* Header */}
             <div className="mb-6">
@@ -31,13 +37,13 @@ export default function Chatroom() {
             </div>
 
             {/* Message Thread */}
-            <div className="p-4">
+            <div className="p-4 bg-gray-50 rounded-lg border">
                 {/* Messages */}
                 {messages.map(message => (
-                    <div key={message.id}>
+                    <div key={message.id} className={`p-3 rounded ${messageBg(message)}`}>
                         {message.role === 'user' ? 'User: ' : 'AI: '}
                         {message.content}
-                        <button onClick={() => handleDelete(message.id)}>x</button>
+                        <button className="px-2 text-red-600" onClick={() => handleDelete(message.id)}>x</button>
                     </div>
                 ))}
                 {/* Stop */}
@@ -49,6 +55,7 @@ export default function Chatroom() {
                 )}
                 {/* Regenerate */}
                 <button
+                    className="p-2 m-1 bg-blue-200 border rounded-lg"
                     onClick={() => reload()}
                     disabled={!(status === 'ready' || status === 'error')}>
                     Regenerate
@@ -57,7 +64,7 @@ export default function Chatroom() {
                 {error && (
                     <div>
                         <div>An error occurred.</div>
-                        <button type="button" onClick={() => reload()}>
+                        <button className="p-2" type="button" onClick={() => reload()}>
                             Retry
                         </button>
                     </div>
@@ -72,7 +79,7 @@ export default function Chatroom() {
                     placeholder="Start chatting..."
                     className="p-3 border-2 rounded-lg"
                 />
-                <button type="submit" className="p-5">
+                <button type="submit" className="p-5 border-2 rounded-lg font-semibold bg-blue-600 text-white">
                     Send
                 </button>
             </form>
