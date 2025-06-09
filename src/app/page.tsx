@@ -18,7 +18,7 @@ export default function Page() {
         <div>
           {status === 'submitted' && <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-blue-500"></div>}
           <button type="button" onClick={() => stop()}>
-            Stop
+            Cancel
           </button>
         </div>
       )}
