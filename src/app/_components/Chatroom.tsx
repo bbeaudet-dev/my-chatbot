@@ -21,11 +21,11 @@ export default function Chatroom() {
         setMessages(messages.filter(message => message.id !== id))
     }
 
-    const messageBg = (message: Message) => {
-        message.role === 'user'
-            ? 'bg-blue-500 text-blue-200 ml-12'
-            : 'bg-white border mr-12'
-    }
+    // const messageBg = (message: Message) => {
+    //     message.role === 'user'
+    //         ? 'bg-blue-500 text-blue-200 ml-12'
+    //         : 'bg-white border mr-12'
+    // }
 
     return (
         <div className="flex flex-col w-full max-w-2xl mx-auto p-4">
