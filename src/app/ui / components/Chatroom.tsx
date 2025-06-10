@@ -8,7 +8,7 @@ import ChatInput from './ChatInput'
 
 
 export default function Chatroom( { id, initialMessages}: {id?: string | undefined; initialMessages?: Message[]} = {}) {
-    const { messages, setMessages, input, setInput, handleInputChange, handleSubmit, status, stop, error, reload } = useChat({
+    const { messages, setMessages, input, handleInputChange, handleSubmit, status, stop, error, reload } = useChat({
         id, initialMessages, sendExtraMessageFields: true,
         onFinish: (message, { usage, finishReason }) => {
             console.log('Finished streaming message:', message)

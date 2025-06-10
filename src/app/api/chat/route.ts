@@ -2,8 +2,13 @@ import { openai } from '@ai-sdk/openai'
 import { appendResponseMessages, createIdGenerator, streamText, type Message } from 'ai'
 import { saveChat } from '../../../tools/chat-store'
 
+interface ChatProps {
+  messages: Message[]
+  id: string
+}
+
 export async function POST(req: Request) {
-  const { messages, id } = await req.json() 
+  const { messages, id }: ChatProps = await req.json() as ChatProps
 
   const result = streamText({
     model: openai('gpt-4-turbo'),

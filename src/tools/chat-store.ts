@@ -16,7 +16,7 @@ export function getChatFile(id: string): string {
 }
 
 export async function loadChat(id: string): Promise<Message[]> {
-    return JSON.parse(await readFile(getChatFile(id),'utf8'))
+    return JSON.parse(await readFile(getChatFile(id),'utf8')) as Message[]
 }
 
 export async function saveChat({id, messages}: {id: string,messages: Message[]}): Promise<void> {
