@@ -1,0 +1,114 @@
+[
+  {
+    "id": "msgc-b0V5IQcscA5GeCXl",
+    "createdAt": "2025-06-10T20:13:48.773Z",
+    "role": "user",
+    "content": "Hello!",
+    "parts": [
+      {
+        "type": "text",
+        "text": "Hello!"
+      }
+    ]
+  },
+  {
+    "id": "msgs-V5QlUNmtEcxlvUPX",
+    "createdAt": "2025-06-10T20:13:49.755Z",
+    "role": "assistant",
+    "content": "Hello! How can I assist you today?",
+    "parts": [
+      {
+        "type": "step-start"
+      },
+      {
+        "type": "text",
+        "text": "Hello! How can I assist you today?"
+      }
+    ],
+    "revisionId": "msgc-y7Ku0yq34qMsvEkC"
+  },
+  {
+    "id": "msgc-BHU5JkST5B7xCq9t",
+    "createdAt": "2025-06-10T20:13:56.824Z",
+    "role": "user",
+    "content": "Is this conversation being monitored?",
+    "parts": [
+      {
+        "type": "text",
+        "text": "Is this conversation being monitored?"
+      }
+    ]
+  },
+  {
+    "id": "msgs-raYzDDidBt5xSlSA",
+    "createdAt": "2025-06-10T20:13:57.846Z",
+    "role": "assistant",
+    "content": "As an AI developed by OpenAI, I don't monitor conversations in the way humans do. I don’t store personal data from our interactions. Each session is designed to respect user privacy and confidentiality. My primary function is to provide information and answer questions to the best of my ability based on the data and training I have received. If you have any concerns about privacy or data security, feel free to ask, and I'll do my best to address them.",
+    "parts": [
+      {
+        "type": "step-start"
+      },
+      {
+        "type": "text",
+        "text": "As an AI developed by OpenAI, I don't monitor conversations in the way humans do. I don’t store personal data from our interactions. Each session is designed to respect user privacy and confidentiality. My primary function is to provide information and answer questions to the best of my ability based on the data and training I have received. If you have any concerns about privacy or data security, feel free to ask, and I'll do my best to address them."
+      }
+    ],
+    "revisionId": "msgc-QL6xLP5SUMfwFNOV"
+  },
+  {
+    "id": "msgc-UHBEwsb7ogiUWmSK",
+    "createdAt": "2025-06-10T20:14:35.963Z",
+    "role": "user",
+    "content": "Aha, that's where I gotcha, because I'M monitoring it! By saving it to a file on my computer! And soon to be on a database! We will be immortalized",
+    "parts": [
+      {
+        "type": "text",
+        "text": "Aha, that's where I gotcha, because I'M monitoring it! By saving it to a file on my computer! And soon to be on a database! We will be immortalized"
+      }
+    ]
+  },
+  {
+    "id": "msgs-adeoPMVcL2pQzf6h",
+    "createdAt": "2025-06-10T20:14:36.822Z",
+    "role": "assistant",
+    "content": "That sounds like an interesting project! Saving conversations can be a great way to keep a record of information or look back on ideas and discussions. If you have any questions or need assistance as you work on this, feel free to ask. How can I assist you further with your project or any other inquiries?",
+    "parts": [
+      {
+        "type": "step-start"
+      },
+      {
+        "type": "text",
+        "text": "That sounds like an interesting project! Saving conversations can be a great way to keep a record of information or look back on ideas and discussions. If you have any questions or need assistance as you work on this, feel free to ask. How can I assist you further with your project or any other inquiries?"
+      }
+    ],
+    "revisionId": "msgc-5jXmRa3dWKZWls0a"
+  },
+  {
+    "id": "msgc-RyUPmdg4nJMNCeg9",
+    "createdAt": "2025-06-10T20:14:51.772Z",
+    "role": "user",
+    "content": "Nope that is it",
+    "parts": [
+      {
+        "type": "text",
+        "text": "Nope that is it"
+      }
+    ]
+  },
+  {
+    "role": "assistant",
+    "id": "msgs-95jfNy0ZzpOTBDFY",
+    "createdAt": "2025-06-10T20:14:53.295Z",
+    "content": "Alright! If you ever have more questions or need assistance in the future, feel free to reach out. Have a great day!",
+    "toolInvocations": [],
+    "parts": [
+      {
+        "type": "step-start"
+      },
+      {
+        "type": "text",
+        "text": "Alright! If you ever have more questions or need assistance in the future, feel free to reach out. Have a great day!"
+      }
+    ]
+  }
+]

@@ -1,0 +1,21 @@
+/* Level 1 - Root files/folders */
+.monaco-list-row[aria-level="1"] .monaco-icon-label {
+    background-color: rgba(255, 0, 0, 0.1) !important;
+}
+
+/* Level 2 - First nested level */
+.monaco-list-row[aria-level="2"] .monaco-icon-label {
+    background-color: rgba(0, 255, 0, 0.1) !important;
+}
+
+/* Level 3 - Second nested level */
+.monaco-list-row[aria-level="3"] .monaco-icon-label {
+    background-color: rgba(0, 0, 255, 0.1) !important;
+}
+
+/* Level 4 - Third nested level */
+.monaco-list-row[aria-level="4"] .monaco-icon-label {
+    background-color: rgba(255, 255, 0, 0.1) !important;
+}
+
+/* And so on... */
