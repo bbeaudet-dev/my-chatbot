@@ -6,14 +6,21 @@ interface ChatInputProps {
 }
 
 export default function ChatInput({ input, onChange, onSubmit, status }: ChatInputProps) {
-    const handleSubmit = (e: React.FormEvent) => {
-        e.preventDefault()
-        let newInput = input.trim().toLowerCase()
-        if (input.trim() && !input.trim().endsWith('?') && 
-            (newInput.startsWith('is') || newInput.startsWith('does') || newInput.startsWith('can') || newInput.startsWith('are') ||
-                newInput.startsWith('do') || newInput.startsWith('did') || newInput.startsWith('was') || newInput.startsWith('were'))) {
+    const handleSubmit = (event: React.FormEvent) => {
+        event.preventDefault()
+        let newInput = input.trim()
+        if (newInput && !newInput.endsWith('?') && 
+            (newInput.toLowerCase().startsWith('is') || 
+            newInput.toLowerCase().startsWith('does') || 
+            newInput.toLowerCase().startsWith('can') || 
+            newInput.toLowerCase().startsWith('are') ||
+            newInput.toLowerCase().startsWith('do') || 
+            newInput.toLowerCase().startsWith('did') || 
+            newInput.toLowerCase().startsWith('was') || 
+            newInput.toLowerCase().startsWith('were'))) {
             newInput += '?'
         }
+        onSubmit(event)
     }
 
     return (
@@ -28,7 +35,6 @@ export default function ChatInput({ input, onChange, onSubmit, status }: ChatInp
                 <button 
                     type="submit" 
                     className="px-6 py-3 rounded-lg font-medium bg-[#2C1810] text-[#D4AF37] hover:bg-[#8B4513] transition-colors disabled:opacity-50 border-2 border-[#8B4513]"
-                    onClick={handleSubmit}
                     disabled={!input.trim() || status === 'streaming'}
                 >Send</button>
             </div>
