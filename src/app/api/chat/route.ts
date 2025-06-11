@@ -1,7 +1,7 @@
 import { NextResponse } from 'next/server'
 import { openai } from '@ai-sdk/openai'
 import { streamText } from 'ai'
-import { SYSTEM_PROMPT } from '../../../lib/puzzle-state'
+import { riddlemasterPrompt } from '../../../lib/prompts'
 import type { Message } from 'ai'
 
 export async function POST(req: Request) {
@@ -12,7 +12,7 @@ export async function POST(req: Request) {
     const result = streamText({
       model: openai('gpt-3.5-turbo'),
       messages: [
-        { role: 'system', content: SYSTEM_PROMPT },
+        { role: 'system', content: riddlemasterPrompt },
         ...messages
       ],
       temperature: 0.7,
