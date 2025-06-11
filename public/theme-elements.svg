@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="600" viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+        <!-- Common styles -->
+        <style>
+            .theme-element {
+                fill: none;
+                stroke: #8B4513;
+                stroke-width: 2;
+                filter: drop-shadow(2px 2px 2px rgba(0,0,0,0.2));
+            }
+            .theme-element-fill {
+                fill: #F5E6D3;
+                stroke: #8B4513;
+                stroke-width: 2;
+                filter: drop-shadow(2px 2px 2px rgba(0,0,0,0.2));
+            }
+            .theme-element-gold {
+                fill: #D4AF37;
+                stroke: #8B4513;
+                stroke-width: 2;
+                filter: drop-shadow(2px 2px 2px rgba(0,0,0,0.2));
+            }
+        </style>
+    </defs>
+
+    <!-- Compass -->
+    <g id="compass" transform="translate(50,50)">
+        <circle class="theme-element" cx="40" cy="40" r="35"/>
+        <path class="theme-element" d="M40 5 L40 75 M5 40 L75 40"/>
+        <text class="theme-element-gold" x="35" y="15" font-size="12">N</text>
+        <text class="theme-element-gold" x="35" y="85" font-size="12">S</text>
+        <text class="theme-element-gold" x="10" y="45" font-size="12">W</text>
+        <text class="theme-element-gold" x="70" y="45" font-size="12">E</text>
+    </g>
+
+    <!-- Magnifying Glass -->
+    <g id="magnifying-glass" transform="translate(150,50)">
+        <circle class="theme-element" cx="30" cy="30" r="20"/>
+        <line class="theme-element" x1="45" y1="45" x2="60" y2="60"/>
+    </g>
+
+    <!-- Book -->
+    <g id="book" transform="translate(250,50)">
+        <path class="theme-element-fill" d="M10 10 L10 70 L50 70 L50 10 Z"/>
+        <path class="theme-element" d="M10 10 L50 10 L50 70 L10 70 Z"/>
+        <line class="theme-element" x1="30" y1="10" x2="30" y2="70"/>
+    </g>
+
+    <!-- Candle -->
+    <g id="candle" transform="translate(350,50)">
+        <rect class="theme-element-fill" x="25" y="20" width="10" height="40"/>
+        <path class="theme-element-gold" d="M25 20 L30 10 L35 20"/>
+        <path class="theme-element" d="M30 10 L30 5"/>
+    </g>
+
+    <!-- Map -->
+    <g id="map" transform="translate(450,50)">
+        <path class="theme-element-fill" d="M10 10 L70 10 L70 70 L10 70 Z"/>
+        <path class="theme-element" d="M10 10 L70 10 L70 70 L10 70 Z"/>
+        <path class="theme-element" d="M20 20 L60 20 M20 40 L60 40 M20 60 L60 60"/>
+        <path class="theme-element" d="M20 20 L20 60 M40 20 L40 60 M60 20 L60 60"/>
+    </g>
+
+    <!-- Scroll -->
+    <g id="scroll" transform="translate(550,50)">
+        <path class="theme-element-fill" d="M10 20 C10 10 20 10 30 20 L30 60 C30 70 20 70 10 60 Z"/>
+        <path class="theme-element" d="M10 20 C10 10 20 10 30 20 L30 60 C30 70 20 70 10 60 Z"/>
+        <line class="theme-element" x1="15" y1="30" x2="25" y2="30"/>
+        <line class="theme-element" x1="15" y1="40" x2="25" y2="40"/>
+        <line class="theme-element" x1="15" y1="50" x2="25" y2="50"/>
+    </g>
+
+    <!-- Quill -->
+    <g id="quill" transform="translate(650,50)">
+        <path class="theme-element" d="M10 10 L50 50"/>
+        <path class="theme-element-fill" d="M10 10 L20 20 L30 10 Z"/>
+    </g>
+</svg> 

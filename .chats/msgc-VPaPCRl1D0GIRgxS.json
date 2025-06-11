@@ -1,0 +1,144 @@
+{
+  "messages": [
+    {
+      "id": "msgc-IR4m3ZEe76EETNgp",
+      "createdAt": "2025-06-10T23:38:41.158Z",
+      "role": "user",
+      "content": "hellooooo",
+      "parts": [
+        {
+          "type": "text",
+          "text": "hellooooo"
+        }
+      ]
+    },
+    {
+      "id": "msgs-2M8P5WoyP3jmj5aR",
+      "createdAt": "2025-06-10T23:38:42.465Z",
+      "role": "assistant",
+      "content": "🗿 Greetings, seeker of mysteries. Are you ready to delve into a puzzle that may twist your perception and challenge your reasoning?",
+      "parts": [
+        {
+          "type": "step-start"
+        },
+        {
+          "type": "text",
+          "text": "🗿 Greetings, seeker of mysteries. Are you ready to delve into a puzzle that may twist your perception and challenge your reasoning?"
+        }
+      ],
+      "revisionId": "msgc-hutjcjAXhu9AAkdR"
+    },
+    {
+      "id": "msgc-0ockD4yzADa3CLSa",
+      "createdAt": "2025-06-10T23:38:52.764Z",
+      "role": "user",
+      "content": "just a moment",
+      "parts": [
+        {
+          "type": "text",
+          "text": "just a moment"
+        }
+      ]
+    },
+    {
+      "id": "msgs-pZElVnrTkHNQZh4X",
+      "createdAt": "2025-06-10T23:38:53.455Z",
+      "role": "assistant",
+      "content": "🗿 Take all the time you need. The puzzle awaits your readiness.",
+      "parts": [
+        {
+          "type": "step-start"
+        },
+        {
+          "type": "text",
+          "text": "🗿 Take all the time you need. The puzzle awaits your readiness."
+        }
+      ],
+      "revisionId": "msgc-shtnV9aCtP9hTKwZ"
+    },
+    {
+      "id": "msgc-oRBH8Lzsz7sgfsvA",
+      "createdAt": "2025-06-10T23:38:54.613Z",
+      "role": "user",
+      "content": "hello ",
+      "parts": [
+        {
+          "type": "text",
+          "text": "hello "
+        }
+      ]
+    },
+    {
+      "id": "msgs-lUlyh92aOTfirqGS",
+      "createdAt": "2025-06-10T23:38:55.320Z",
+      "role": "assistant",
+      "content": "🗿 Welcome back. Shall we begin with a puzzle to test your wits?",
+      "parts": [
+        {
+          "type": "step-start"
+        },
+        {
+          "type": "text",
+          "text": "🗿 Welcome back. Shall we begin with a puzzle to test your wits?"
+        }
+      ],
+      "revisionId": "msgc-p3yWO88WtbYGmXzA"
+    },
+    {
+      "id": "msgc-xyrcezpA1XSYLIU6",
+      "createdAt": "2025-06-10T23:38:56.588Z",
+      "role": "user",
+      "content": "hello ",
+      "parts": [
+        {
+          "type": "text",
+          "text": "hello "
+        }
+      ]
+    },
+    {
+      "id": "msgs-MKfv8xyRoieaSS7A",
+      "createdAt": "2025-06-10T23:38:57.670Z",
+      "role": "assistant",
+      "content": "🗿 Greetings once again. Are you prepared to embark on a journey through enigma and discovery? Let me know when you're ready for the puzzle.",
+      "parts": [
+        {
+          "type": "step-start"
+        },
+        {
+          "type": "text",
+          "text": "🗿 Greetings once again. Are you prepared to embark on a journey through enigma and discovery? Let me know when you're ready for the puzzle."
+        }
+      ],
+      "revisionId": "msgc-yed0Odz8Mz3SGer8"
+    },
+    {
+      "id": "msgc-ONa54Nrrcu2ZmxPc",
+      "createdAt": "2025-06-10T23:38:58.887Z",
+      "role": "user",
+      "content": "not et",
+      "parts": [
+        {
+          "type": "text",
+          "text": "not et"
+        }
+      ]
+    },
+    {
+      "role": "assistant",
+      "id": "msgs-jqdhJqKhOrQGvF2I",
+      "createdAt": "2025-06-10T23:39:00.151Z",
+      "content": "🗿 Understood. I'll be here when you're ready to begin. Just say the word.",
+      "toolInvocations": [],
+      "parts": [
+        {
+          "type": "step-start"
+        },
+        {
+          "type": "text",
+          "text": "🗿 Understood. I'll be here when you're ready to begin. Just say the word."
+        }
+      ]
+    }
+  ]
+}

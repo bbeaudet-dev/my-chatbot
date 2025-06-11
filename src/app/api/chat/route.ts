@@ -1,35 +1,38 @@
-import { openai } from '@ai-sdk/openai'
-import { appendResponseMessages, createIdGenerator, streamText, type Message } from 'ai'
-import { saveChat } from '../../../tools/chat-store'
+import { NextResponse } from 'next/server'
+import OpenAI from 'openai'
+import { SYSTEM_PROMPT } from '../../../lib/puzzle-state'
 
-interface ChatProps {
-  messages: Message[]
-  id: string
-}
+const openai = new OpenAI({
+  apiKey: process.env.OPENAI_API_KEY,
+})
 
 export async function POST(req: Request) {
-  const { messages, id }: ChatProps = await req.json() as ChatProps
+  try {
+    const { messages } = await req.json()
+    console.log('Received chat request:', { messageCount: messages.length })
 
-  const result = streamText({
-    model: openai('gpt-4-turbo'),
-    messages,
-    async onFinish({ response }) {
-      await saveChat({
-        id,
-        messages:appendResponseMessages({
-          messages,
-          responseMessages: response.messages,
-        })
-      })
-    },
-    experimental_generateMessageId: createIdGenerator({
-      prefix: 'msgs',
-      size: 16,
+    const completion = await openai.chat.completions.create({
+      model: 'gpt-3.5-turbo',
+      messages: [
+        { role: 'system', content: SYSTEM_PROMPT },
+        ...messages
+      ],
+      temperature: 0.7,
+      max_tokens: 500,
     })
-  })
 
-  return result.toDataStreamResponse({
-    sendReasoning: true,
-    sendSources: true,
-  })
+    const response = completion.choices[0]?.message
+
+    if (!response) {
+      throw new Error('No response from OpenAI')
+    }
+
+    return NextResponse.json(response)
+  } catch (error) {
+    console.error('Error in chat route:', error)
+    return NextResponse.json(
+      { error: 'Internal server error' },
+      { status: 500 }
+    )
+  }
 }

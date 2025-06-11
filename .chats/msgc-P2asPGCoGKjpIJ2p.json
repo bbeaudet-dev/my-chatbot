@@ -1,0 +1,32 @@
+{
+  "messages": [
+    {
+      "id": "msgc-D82sspAI9WZlOCwi",
+      "createdAt": "2025-06-10T23:46:47.063Z",
+      "role": "user",
+      "content": "Why hello there!",
+      "parts": [
+        {
+          "type": "text",
+          "text": "Why hello there!"
+        }
+      ]
+    },
+    {
+      "role": "assistant",
+      "id": "msgs-E6F36v1MZvzWXCiV",
+      "createdAt": "2025-06-10T23:46:49.516Z",
+      "content": "🗿 Greetings, seeker of mysteries. Are you ready to delve into a puzzle that may twist your perception and challenge your reasoning?",
+      "toolInvocations": [],
+      "parts": [
+        {
+          "type": "step-start"
+        },
+        {
+          "type": "text",
+          "text": "🗿 Greetings, seeker of mysteries. Are you ready to delve into a puzzle that may twist your perception and challenge your reasoning?"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,200 @@
+{
+  "messages": [
+    {
+      "id": "msgc-rdi5cRQFxRfGsWPo",
+      "createdAt": "2025-06-10T23:31:54.360Z",
+      "role": "user",
+      "content": "Hello",
+      "parts": [
+        {
+          "type": "text",
+          "text": "Hello"
+        }
+      ]
+    },
+    {
+      "id": "msgs-uVGsEaN7vNVYc1FG",
+      "createdAt": "2025-06-10T23:31:56.207Z",
+      "role": "assistant",
+      "content": "🗿 Greetings, seeker of mysteries. Are you ready to delve into a puzzle that will challenge your wits and stir your imagination?",
+      "parts": [
+        {
+          "type": "step-start"
+        },
+        {
+          "type": "text",
+          "text": "🗿 Greetings, seeker of mysteries. Are you ready to delve into a puzzle that will challenge your wits and stir your imagination?"
+        }
+      ],
+      "revisionId": "msgc-JUQDCErv7Co7iMXL"
+    },
+    {
+      "id": "msgc-gdByTKCT48m9snJo",
+      "createdAt": "2025-06-10T23:32:13.763Z",
+      "role": "user",
+      "content": "Let's see if you're able to auto-scroll the text in the window...",
+      "parts": [
+        {
+          "type": "text",
+          "text": "Let's see if you're able to auto-scroll the text in the window..."
+        }
+      ]
+    },
+    {
+      "id": "msgs-ZGKWRByfIRpkfjtT",
+      "createdAt": "2025-06-10T23:32:14.458Z",
+      "role": "assistant",
+      "content": "🗿 While I can't manipulate the window or its scrolling, I can certainly present you with a riddle that might just make your thoughts whirl. Shall we begin?",
+      "parts": [
+        {
+          "type": "step-start"
+        },
+        {
+          "type": "text",
+          "text": "🗿 While I can't manipulate the window or its scrolling, I can certainly present you with a riddle that might just make your thoughts whirl. Shall we begin?"
+        }
+      ],
+      "revisionId": "msgc-VA3kOfxWWmqkPfZ4"
+    },
+    {
+      "id": "msgc-JXTDV3LysWTmMpBm",
+      "createdAt": "2025-06-10T23:32:19.960Z",
+      "role": "user",
+      "content": "In a moment",
+      "parts": [
+        {
+          "type": "text",
+          "text": "In a moment"
+        }
+      ]
+    },
+    {
+      "id": "msgs-67sYEVtDewnHzH4I",
+      "createdAt": "2025-06-10T23:32:21.078Z",
+      "role": "assistant",
+      "content": "🗿 Take all the time you need. When you are ready, the puzzle awaits.",
+      "parts": [
+        {
+          "type": "step-start"
+        },
+        {
+          "type": "text",
+          "text": "🗿 Take all the time you need. When you are ready, the puzzle awaits."
+        }
+      ],
+      "revisionId": "msgc-pibYiYivzQn03SQr"
+    },
+    {
+      "id": "msgc-967P2xXp67a1d7Zu",
+      "createdAt": "2025-06-10T23:32:25.033Z",
+      "role": "user",
+      "content": "Just a couple more messages",
+      "parts": [
+        {
+          "type": "text",
+          "text": "Just a couple more messages"
+        }
+      ]
+    },
+    {
+      "id": "msgs-2hvGeTDAQiDXkEqU",
+      "createdAt": "2025-06-10T23:32:25.868Z",
+      "role": "assistant",
+      "content": "🗿 Understood. I'll be here, ready with a riddle when you are set to embark on this enigmatic journey.",
+      "parts": [
+        {
+          "type": "step-start"
+        },
+        {
+          "type": "text",
+          "text": "🗿 Understood. I'll be here, ready with a riddle when you are set to embark on this enigmatic journey."
+        }
+      ],
+      "revisionId": "msgc-HXiWk4cexVemzoXL"
+    },
+    {
+      "id": "msgc-ColeWwBtsrynJ6JH",
+      "createdAt": "2025-06-10T23:32:29.635Z",
+      "role": "user",
+      "content": "sweet",
+      "parts": [
+        {
+          "type": "text",
+          "text": "sweet"
+        }
+      ]
+    },
+    {
+      "id": "msgs-FYGcBP0Bba26fpM1",
+      "createdAt": "2025-06-10T23:32:31.017Z",
+      "role": "assistant",
+      "content": "🗿 Excellent. Whenever you're ready, just say the word, and we shall begin.",
+      "parts": [
+        {
+          "type": "step-start"
+        },
+        {
+          "type": "text",
+          "text": "🗿 Excellent. Whenever you're ready, just say the word, and we shall begin."
+        }
+      ],
+      "revisionId": "msgc-Z2GJ4ew5AF0Stj7S"
+    },
+    {
+      "id": "msgc-uobfJycZy3wUq3wl",
+      "createdAt": "2025-06-10T23:32:36.057Z",
+      "role": "user",
+      "content": "hello",
+      "parts": [
+        {
+          "type": "text",
+          "text": "hello"
+        }
+      ]
+    },
+    {
+      "id": "msgs-hdPCH1Wps2osZ0hO",
+      "createdAt": "2025-06-10T23:32:36.958Z",
+      "role": "assistant",
+      "content": "🗿 Welcome back. Shall we dive into the puzzle now? Here it is:\n\n\"A woman lives on the tenth floor of an apartment building. Every morning she takes the elevator down to the ground floor and leaves for work. In the evening, she returns home and, on rainy days, takes the elevator all the way up to her apartment on the tenth floor. However, on days when it's not raining, she goes to the ninth floor and walks the rest of the way up the stairs to her apartment. Why does she do this?\"",
+      "parts": [
+        {
+          "type": "step-start"
+        },
+        {
+          "type": "text",
+          "text": "🗿 Welcome back. Shall we dive into the puzzle now? Here it is:\n\n\"A woman lives on the tenth floor of an apartment building. Every morning she takes the elevator down to the ground floor and leaves for work. In the evening, she returns home and, on rainy days, takes the elevator all the way up to her apartment on the tenth floor. However, on days when it's not raining, she goes to the ninth floor and walks the rest of the way up the stairs to her apartment. Why does she do this?\""
+        }
+      ],
+      "revisionId": "msgc-4BYgchXeLCH0DKh6"
+    },
+    {
+      "id": "msgc-zdbQCQZjdh9IgKRm",
+      "createdAt": "2025-06-10T23:32:44.173Z",
+      "role": "user",
+      "content": "ok",
+      "parts": [
+        {
+          "type": "text",
+          "text": "ok"
+        }
+      ]
+    },
+    {
+      "role": "assistant",
+      "id": "msgs-u1FLpWGtrRVTgKnm",
+      "createdAt": "2025-06-10T23:32:46.369Z",
+      "content": "🗿 Please, feel free to ask yes or no questions, or propose theories to unravel this curious scenario. What might be the reason for her peculiar behavior?",
+      "toolInvocations": [],
+      "parts": [
+        {
+          "type": "step-start"
+        },
+        {
+          "type": "text",
+          "text": "🗿 Please, feel free to ask yes or no questions, or propose theories to unravel this curious scenario. What might be the reason for her peculiar behavior?"
+        }
+      ]
+    }
+  ]
+}

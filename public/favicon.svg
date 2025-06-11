@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <!-- Top Hat -->
+    <path d="M8 12h16v2H8z" fill="#2D3748"/>
+    <path d="M6 14h20v4H6z" fill="#1A202C"/>
+    <path d="M4 18h24v2H4z" fill="#2D3748"/>
+    
+    <!-- Bunny Ears -->
+    <path d="M12 8l2-4 2 4" fill="#E2E8F0"/>
+    <path d="M20 8l2-4 2 4" fill="#E2E8F0"/>
+    
+    <!-- Bunny Face -->
+    <circle cx="12" cy="14" r="2" fill="#1A202C"/>
+    <circle cx="20" cy="14" r="2" fill="#1A202C"/>
+    <path d="M14 18c2 1 4 1 6 0" stroke="#1A202C" stroke-width="1.5" fill="none"/>
+</svg> 
