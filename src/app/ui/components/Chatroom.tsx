@@ -10,7 +10,7 @@ import EmojiDisplay from './EmojiDisplay'
 
 export default function Chatroom({ id, initialMessages }: {id?: string | undefined; initialMessages?: Message[]} = {}) {
     const { messages, setMessages, input, handleInputChange, handleSubmit, status, stop, error, reload } = useChat({
-        id, initialMessages: initialMessages || [], sendExtraMessageFields: true,
+        id, initialMessages: initialMessages ?? [], sendExtraMessageFields: true,
         onFinish: (message, { usage, finishReason }) => {
             console.log('Finished streaming message:', message)
             console.log('Token usage (completion, prompt, total):', usage.completionTokens, usage.promptTokens, usage.totalTokens)
