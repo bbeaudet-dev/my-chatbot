@@ -2,10 +2,11 @@ import { NextResponse } from 'next/server'
 import { openai } from '@ai-sdk/openai'
 import { streamText } from 'ai'
 import { SYSTEM_PROMPT } from '../../../lib/puzzle-state'
+import type { Message } from 'ai'
 
 export async function POST(req: Request) {
   try {
-    const { messages } = await req.json()
+    const { messages } = await req.json() as { messages: Message[] }
     console.log('Received chat request:', { messageCount: messages.length })
 
     const result = streamText({
