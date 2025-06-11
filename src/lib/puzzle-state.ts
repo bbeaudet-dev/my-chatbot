@@ -185,7 +185,7 @@ export class PuzzleStateManager {
         const lastInsight = this.state.insights
             .filter(i => i.discovered)
             .sort((a, b) => 
-                (b.discoveredAt?.getTime() || 0) - (a.discoveredAt?.getTime() || 0)
+                (b.discoveredAt?.getTime() ?? 0) - (a.discoveredAt?.getTime() ?? 0)
             )[0]
         
         if (!lastInsight?.discoveredAt) return 0

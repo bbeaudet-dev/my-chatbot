@@ -33,8 +33,9 @@ export function getChatFile(id: string): string {
 }
 
 export async function loadChat(id: string): Promise<ChatData> {
-    const data = JSON.parse(await readFile(getChatFile(id), 'utf8'))
-    return data as ChatData
+    const content = await readFile(getChatFile(id), 'utf8')
+    const data = JSON.parse(content) as ChatData
+    return data
 }
 
 export async function saveChat({
