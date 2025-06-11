@@ -1,0 +1,32 @@
+{
+  "messages": [
+    {
+      "id": "msgc-Ci2syTGLe0VvTJJH",
+      "createdAt": "2025-06-11T04:21:52.467Z",
+      "role": "user",
+      "content": "hu",
+      "parts": [
+        {
+          "type": "text",
+          "text": "hu"
+        }
+      ]
+    },
+    {
+      "role": "assistant",
+      "id": "msgs-OHRuq6S6wEBp0GRh",
+      "createdAt": "2025-06-11T04:21:55.073Z",
+      "content": "🗿 Welcome, seeker of riddles. Let us test your wits with a puzzle:\n\n\"A woman buys a new pair of shoes, goes to work, and dies. What happened?\"\n\nDelve into this mystery with your questions, and remember, each question should seek a yes or no answer to guide you closer to the truth. What will you ask first?",
+      "toolInvocations": [],
+      "parts": [
+        {
+          "type": "step-start"
+        },
+        {
+          "type": "text",
+          "text": "🗿 Welcome, seeker of riddles. Let us test your wits with a puzzle:\n\n\"A woman buys a new pair of shoes, goes to work, and dies. What happened?\"\n\nDelve into this mystery with your questions, and remember, each question should seek a yes or no answer to guide you closer to the truth. What will you ask first?"
+        }
+      ]
+    }
+  ]
+}

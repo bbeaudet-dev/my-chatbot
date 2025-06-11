@@ -1,0 +1,88 @@
+{
+  "messages": [
+    {
+      "id": "msgc-CkPnBjqBE0wqDy5q",
+      "createdAt": "2025-06-11T04:29:20.865Z",
+      "role": "user",
+      "content": "helllo",
+      "parts": [
+        {
+          "type": "text",
+          "text": "helllo"
+        }
+      ]
+    },
+    {
+      "id": "msgs-TEEJMWizwh91O38X",
+      "createdAt": "2025-06-11T04:29:22.234Z",
+      "role": "assistant",
+      "content": "🗿 Greetings, seeker of mysteries. Are you ready to delve into a puzzle that may twist your perception and challenge your reasoning?",
+      "parts": [
+        {
+          "type": "step-start"
+        },
+        {
+          "type": "text",
+          "text": "🗿 Greetings, seeker of mysteries. Are you ready to delve into a puzzle that may twist your perception and challenge your reasoning?"
+        }
+      ],
+      "revisionId": "msgc-OrCHWRK1545xfiCW"
+    },
+    {
+      "id": "msgc-5JLSBlzEHIA5PA52",
+      "createdAt": "2025-06-11T04:36:46.090Z",
+      "role": "user",
+      "content": "hello",
+      "parts": [
+        {
+          "type": "text",
+          "text": "hello"
+        }
+      ]
+    },
+    {
+      "id": "msgs-mXnAGGYUKUXcqaeG",
+      "createdAt": "2025-06-11T04:36:47.007Z",
+      "role": "assistant",
+      "content": "🗿 Welcome, traveler of enigmas. Shall we embark on a journey through a riddle that awaits your keen insight?",
+      "parts": [
+        {
+          "type": "step-start"
+        },
+        {
+          "type": "text",
+          "text": "🗿 Welcome, traveler of enigmas. Shall we embark on a journey through a riddle that awaits your keen insight?"
+        }
+      ],
+      "revisionId": "msgc-vBbz2huU0rNhPPA8"
+    },
+    {
+      "id": "msgc-Q2LGCjkMZ0iRZESu",
+      "createdAt": "2025-06-11T04:36:51.266Z",
+      "role": "user",
+      "content": "yes",
+      "parts": [
+        {
+          "type": "text",
+          "text": "yes"
+        }
+      ]
+    },
+    {
+      "role": "assistant",
+      "id": "msgs-nIxTGg3MDOaFfPnr",
+      "createdAt": "2025-06-11T04:36:52.486Z",
+      "content": "🗿 Very well. Here is your puzzle:\n\nA woman buys a new pair of shoes, goes to work, and dies. What happened?\n\nLet the questions guide you to the hidden truths.",
+      "toolInvocations": [],
+      "parts": [
+        {
+          "type": "step-start"
+        },
+        {
+          "type": "text",
+          "text": "🗿 Very well. Here is your puzzle:\n\nA woman buys a new pair of shoes, goes to work, and dies. What happened?\n\nLet the questions guide you to the hidden truths."
+        }
+      ]
+    }
+  ]
+}

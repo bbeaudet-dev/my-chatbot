@@ -3,9 +3,24 @@ import { existsSync, mkdirSync } from 'fs'
 import { writeFile, readFile } from 'fs/promises'
 import path from 'path'
 
+interface ChatData {
+    messages: Message[]
+    metadata?: {
+        startTime: string
+        endTime?: string
+        puzzleId?: string
+    }
+}
+
 export async function createChat(): Promise<string> {
     const id = generateId()
-    await writeFile(getChatFile(id), '[]')
+    const initialData: ChatData = {
+        messages: [],
+        metadata: {
+            startTime: new Date().toISOString()
+        }
+    }
+    await writeFile(getChatFile(id), JSON.stringify(initialData, null, 2))
     return id
 }
 
@@ -15,11 +30,27 @@ export function getChatFile(id: string): string {
     return path.join(chatDir, `${id}.json`)
 }
 
-export async function loadChat(id: string): Promise<Message[]> {
-    return JSON.parse(await readFile(getChatFile(id),'utf8')) as Message[]
+export async function loadChat(id: string): Promise<ChatData> {
+    const data = JSON.parse(await readFile(getChatFile(id), 'utf8'))
+    return data as ChatData
 }
 
-export async function saveChat({id, messages}: {id: string,messages: Message[]}): Promise<void> {
-    const content = JSON.stringify(messages, null, 2)
-    await writeFile(getChatFile(id), content)
+export async function saveChat({
+    id,
+    messages,
+    metadata
+}: {
+    id: string
+    messages: Message[]
+    metadata?: {
+        startTime: string
+        endTime?: string
+        puzzleId?: string
+    }
+}): Promise<void> {
+    const data: ChatData = {
+        messages,
+        metadata
+    }
+    await writeFile(getChatFile(id), JSON.stringify(data, null, 2))
 }

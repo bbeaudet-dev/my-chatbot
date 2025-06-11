@@ -1,6 +1,7 @@
 import { openai } from '@ai-sdk/openai'
 import { appendResponseMessages, createIdGenerator, streamText, type Message } from 'ai'
 import { saveChat } from '../../../tools/chat-store'
+import { riddlemasterPrompt } from '../../../lib/prompts'
 
 interface ChatProps {
   messages: Message[]
@@ -12,6 +13,7 @@ export async function POST(req: Request) {
 
   const result = streamText({
     model: openai('gpt-4-turbo'),
+    system: riddlemasterPrompt,
     messages,
     async onFinish({ response }) {
       await saveChat({
