@@ -10,13 +10,13 @@ const placeholders = [
 
 export default function ChatInput({
       input,
-      handleInputChange,
-      handleSubmit,
+      onChange,
+      onSubmit,
       status
 }: {
       input: string
-      handleInputChange: ( e: React.ChangeEvent<HTMLTextAreaElement> ) => void
-      handleSubmit: ( e: React.FormEvent<HTMLFormElement> ) => void
+      onChange: ( e: React.ChangeEvent<HTMLTextAreaElement> ) => void
+      onSubmit: ( e: React.FormEvent<HTMLFormElement> ) => void
       status: 'idle' | 'submitted' | 'streaming' | 'ready' | 'error'
 }) {
       const [ placeholder ] = useState( () =>
@@ -32,10 +32,10 @@ export default function ChatInput({
       }, [] )
 
       return (
-            <form onSubmit={ handleSubmit } className="flex items-end gap-2 p-4">
+            <form onSubmit={ onSubmit } className="flex items-end gap-2 p-4">
                   <textarea
                         value={ input }
-                        onChange={ handleInputChange }
+                        onChange={ onChange }
                         onKeyDown={ handleKeyDown }
                         placeholder={ placeholder }
                         rows={ 1 }
