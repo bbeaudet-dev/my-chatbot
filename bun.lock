@@ -27,7 +27,7 @@
         "server-only": "^0.0.1",
         "superjson": "^2.2.1",
         "tailwind-merge": "^3.3.0",
-        "zod": "^3.24.2",
+        "zod": "^3.24.2"
       },
       "devDependencies": {
         "@eslint/eslintrc": "^3.3.1",
@@ -45,9 +45,9 @@
         "tailwindcss": "^4.1.8",
         "tw-animate-css": "^1.3.4",
         "typescript": "^5.8.2",
-        "typescript-eslint": "^8.27.0",
-      },
-    },
+        "typescript-eslint": "^8.27.0"
+      }
+    }
   },
   "packages": {
     "@ai-sdk/openai": ["@ai-sdk/openai@1.3.22", "", { "dependencies": { "@ai-sdk/provider": "1.1.3", "@ai-sdk/provider-utils": "2.2.8" }, "peerDependencies": { "zod": "^3.0.0" } }, "sha512-QwA+2EkG0QyjVR+7h6FE7iOu2ivNqAVMm9UJZkVxxTk5OIq5fFJDTEI/zICEMuHImTTXR2JjsL6EirJ28Jc4cw=="],

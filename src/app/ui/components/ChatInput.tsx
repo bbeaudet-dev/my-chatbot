@@ -1,3 +1,4 @@
+
 interface ChatInputProps {
     input: string
     onChange: (e: React.ChangeEvent<HTMLInputElement>) => void
@@ -8,18 +9,7 @@ interface ChatInputProps {
 export default function ChatInput({ input, onChange, onSubmit, status }: ChatInputProps) {
     const handleSubmit = (event: React.FormEvent) => {
         event.preventDefault()
-        let newInput = input.trim()
-        if (newInput && !newInput.endsWith('?') && 
-            (newInput.toLowerCase().startsWith('is') || 
-            newInput.toLowerCase().startsWith('does') || 
-            newInput.toLowerCase().startsWith('can') || 
-            newInput.toLowerCase().startsWith('are') ||
-            newInput.toLowerCase().startsWith('do') || 
-            newInput.toLowerCase().startsWith('did') || 
-            newInput.toLowerCase().startsWith('was') || 
-            newInput.toLowerCase().startsWith('were'))) {
-            newInput += '?'
-        }
+        // TODO Enter intermediary steps here like adding question mark, detecting duplicates/tone, etc.
         onSubmit(event)
     }
 
