@@ -12,7 +12,7 @@ export async function POST ( req: Request ) {
   const { messages, id }: ChatProps = await req.json() as ChatProps
 
   const result = streamText( {
-    model: openai( 'gpt-4-turbo' ),
+    model: openai( 'gpt-4' ),
     system: riddlemasterPrompt,
     messages,
     async onFinish ( { response } ) {
