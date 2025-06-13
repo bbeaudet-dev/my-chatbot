@@ -1,4 +1,4 @@
-import { createChat } from "../../../tools/chat-store"
+import { createChat } from "../../../lib/tools/chat-store"
 import { redirect } from 'next/navigation'
 
 export default async function Page () {

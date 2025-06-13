@@ -1,4 +1,4 @@
-import Chatroom from './ui/components/Chatroom'
+import Chatroom from './components/Chatroom'
 
 export default function Page () {
       return <Chatroom />

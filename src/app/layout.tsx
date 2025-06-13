@@ -1,5 +1,5 @@
 import { Inter } from "next/font/google";
-import "~/styles/globals.css";
+import "./styles/globals.css";
 
 import { type Metadata } from "next";
 import { Geist } from "next/font/google";
@@ -11,7 +11,7 @@ const geist = Geist( {
 } );
 
 export const metadata: Metadata = {
-      title: "Lateral Thinking RiddleBot",
+      title: "RiddleBot AI",
       description: "An interactive chatbot for solving lateral thinking puzzles",
       icons: {
             icon: '/favicon.svg',
