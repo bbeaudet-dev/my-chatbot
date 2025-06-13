@@ -1,0 +1,32 @@
+{
+  "messages": [
+    {
+      "id": "msgc-pctlLW3hO7hnN5GU",
+      "createdAt": "2025-06-13T18:12:40.864Z",
+      "role": "user",
+      "content": "hi",
+      "parts": [
+        {
+          "type": "text",
+          "text": "hi"
+        }
+      ]
+    },
+    {
+      "role": "assistant",
+      "id": "msgs-wcccgz1h4zkZzG5w",
+      "createdAt": "2025-06-13T18:12:44.568Z",
+      "content": "🗿 Greetings, seeker of mysteries. Are you ready to embark on a journey of the mind? I have a riddle for you. A man is found dead in a field of snow, clutching a broken match. What happened?",
+      "toolInvocations": [],
+      "parts": [
+        {
+          "type": "step-start"
+        },
+        {
+          "type": "text",
+          "text": "🗿 Greetings, seeker of mysteries. Are you ready to embark on a journey of the mind? I have a riddle for you. A man is found dead in a field of snow, clutching a broken match. What happened?"
+        }
+      ]
+    }
+  ]
+}
