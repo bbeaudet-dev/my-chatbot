@@ -1,10 +1,12 @@
-import { Inter } from "next/font/google";
-import "./styles/globals.css";
+import { Inter } from "next/font/google"
+import "./styles/globals.css"
+import { Toaster } from "../components/ui/sonner"
 
-import { type Metadata } from "next";
-import { Geist } from "next/font/google";
 
-const inter = Inter( { subsets: [ "latin" ] } );
+import { type Metadata } from "next"
+import { Geist } from "next/font/google"
+
+const inter = Inter( { subsets: [ "latin" ] } )
 const geist = Geist( {
       subsets: [ "latin" ],
       variable: "--font-geist-sans",
@@ -27,6 +29,7 @@ export default function RootLayout ( {
             <html lang="en" className={ `${ geist.variable } ${ inter.className }` }>
                   <body className="font-sans">
                         { children }
+                        <Toaster />
                   </body>
             </html>
       );

@@ -1,0 +1,32 @@
+{
+  "messages": [
+    {
+      "id": "msgc-xEWmXGUxajCmtrUT",
+      "createdAt": "2025-06-13T23:04:30.321Z",
+      "role": "user",
+      "content": "hello",
+      "parts": [
+        {
+          "type": "text",
+          "text": "hello"
+        }
+      ]
+    },
+    {
+      "role": "assistant",
+      "id": "msgs-d2RLmmWrSMVbAKDC",
+      "createdAt": "2025-06-13T23:04:33.845Z",
+      "content": "🗿 Greetings, seeker of mysteries. Are you ready to embark on a journey of the mind? I have a puzzle for you. A man is found dead in a field. Next to him, there is an unopened package. There is no other creature in the field. How did he die?",
+      "toolInvocations": [],
+      "parts": [
+        {
+          "type": "step-start"
+        },
+        {
+          "type": "text",
+          "text": "🗿 Greetings, seeker of mysteries. Are you ready to embark on a journey of the mind? I have a puzzle for you. A man is found dead in a field. Next to him, there is an unopened package. There is no other creature in the field. How did he die?"
+        }
+      ]
+    }
+  ]
+}

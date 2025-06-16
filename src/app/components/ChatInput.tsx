@@ -32,23 +32,25 @@ export default function ChatInput({
       }, [] )
 
       return (
-            <form onSubmit={ onSubmit } className="flex items-end gap-2 p-4">
-                  <textarea
-                        value={ input }
-                        onChange={ onChange }
-                        onKeyDown={ handleKeyDown }
-                        placeholder={ placeholder }
-                        rows={ 1 }
-                        className="flex-1 resize-none rounded-lg border border-gray-300 p-2 focus:border-blue-500 focus:outline-none"
-                        disabled={ status === 'streaming' || status === 'submitted' }
-                  />
-                  <button
-                        type="submit"
-                        disabled={ !input.trim() || status === 'streaming' || status === 'submitted' }
-                        className="rounded-lg bg-blue-500 px-4 py-2 text-white hover:bg-blue-600 disabled:bg-gray-300"
-                  >
-                        Send
-                  </button>
+            <form onSubmit={ onSubmit } className="p-4 bg-[#F5E6D3]/90 backdrop-blur-sm rounded-lg border-2 border-[#8B4513]">
+                  <div className="flex items-end gap-2">
+                        <textarea
+                              value={ input }
+                              onChange={ onChange }
+                              onKeyDown={ handleKeyDown }
+                              placeholder={ placeholder }
+                              rows={ 1 }
+                              className="flex-1 resize-none rounded-lg border-2 border-[#8B4513] p-3 text-[#2C1810] bg-[#F5E6D3] focus:outline-none focus:border-[#8B4513] min-h-[44px] max-h-[200px]"
+                              disabled={ status === 'streaming' || status === 'submitted' }
+                        />
+                        <button
+                              type="submit"
+                              disabled={ !input.trim() || status === 'streaming' || status === 'submitted' }
+                              className="rounded-lg bg-[#2C1810] text-[#D4AF37] px-4 py-2.5 font-serif hover:bg-[#8B4513] disabled:opacity-50 disabled:cursor-not-allowed transition-colors border-2 border-[#8B4513]"
+                        >
+                              Send
+                        </button>
+                  </div>
             </form>
       )
 } 

@@ -1,0 +1,32 @@
+{
+  "messages": [
+    {
+      "id": "msgc-ZYamnctxHSfGdb6z",
+      "createdAt": "2025-06-13T22:47:31.499Z",
+      "role": "user",
+      "content": "ok",
+      "parts": [
+        {
+          "type": "text",
+          "text": "ok"
+        }
+      ]
+    },
+    {
+      "role": "assistant",
+      "id": "msgs-yx3s2K8SinQxCyLM",
+      "createdAt": "2025-06-13T22:47:34.289Z",
+      "content": "🗿 Very well. Let's begin. A man is found dead in a field. Next to him, there is an unopened package. There is no other creature in the field. How did he die?",
+      "toolInvocations": [],
+      "parts": [
+        {
+          "type": "step-start"
+        },
+        {
+          "type": "text",
+          "text": "🗿 Very well. Let's begin. A man is found dead in a field. Next to him, there is an unopened package. There is no other creature in the field. How did he die?"
+        }
+      ]
+    }
+  ]
+}
